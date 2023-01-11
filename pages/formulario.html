@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - VideoTube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/formulario.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <h1 class="h1"> Subir videos</h1>
+            <a href="/index.html" class="volver">Regresar a la pagina principal</a>
+        </header>
+
+        <form class='form'>
+            <label class="h2">Titulo del video</label>
+            <input type="text" placeholder="Nombre del video...">
+            <label class="h2">Titulo del canal</label>
+            <input type="text" placeholder="Escribe un nombre">
+            <label class="h2">Agregar video</label>
+            <input type="url" placeholder="Introduzca una URL...">
+            <label class="h2">Agregar una miniatura</label>
+            <input type="url" placeholder="Introduzca una URL...">
+            <label class="h2">Agregar información del video</label>
+            <input type="text" placeholder="Vistas y fecha">
+            <label class="h2">Seleccione una categoria</label>
+            <select name="" id="gender">
+                <option value="">Selecione una opción</option>
+                <option value="musica">Música</option>
+                <option value="programacion">Programación</option>
+                <option value="diseno">Diseño UX</option>
+            </select>
+            <label class="h2">Agregar descripción</label>
+            <input type="text" placeholder="Escribe aqui...">
+
+            <button>Enviar video</button>
+        </form>
+    </div>
+
+    <script src="/scripts.js/formulario.js" type="module"></script>
+</body>
+</html>

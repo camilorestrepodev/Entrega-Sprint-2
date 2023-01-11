@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal - VideoTube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/nuevovideo.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <div class="logo">
+                <img class="img-logo" src="/Img/Logo.png" alt="Boton Logo">
+                <h1 id="logoTitle">VideoTube</h1>
+            </div>
+
+            <div class="barra-busqueda">
+                <input type="text" class="texto-barra" placeholder="Buscar video">
+                <a href=""><img class="boton-buscar" src="/Img/search.png" alt=""></a>
+            </div>
+
+            <div class="upload">
+                <a href="/pages/formulario.html"><img class="agregar-video" src="/Img/video_plus_icon_136058.png"
+                        alt="Agregar video"></a>
+            </div>
+        </header>
+
+        <nav class="nav">
+            <button id="todos" class="todos-btn" href="">Todos</button>
+            <button id="musica" href="">Música</button>
+            <button id="programacion" href="">Programación</button>
+            <button id="diseno" href="">Diseño UX</button>
+        </nav>
+    </div>
+
+    <main class="main">
+        <section class="player">
+            <iframe id="reproductor" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h3 id="player-titulo"></h3>
+            <h3 id="player-info"></h3>
+        </section>
+        <section id="contenedorCards">
+            <div class="texto-sugeridos">
+                <h2 class="h2">Videos sugeridos</h2>
+            </div>
+
+            <article class="main-card">
+                <figure class="card-image">
+                    <img src="/Img/miniatura1.webp" alt="w&w">
+                </figure>
+                    <h4 class="card-titulo">Gala - ‘Freed From Desire’ l Tien Om Te Zien l VTM</h4>
+                    <h5 class="card-canal">VTM</h5>
+                    <h6 class="card-info">109,547 vistas - hace 4 meses</h6>
+            </article>
+        </section>
+    </main>
+
+    <script src="/scripts.js/videoPlayer.js" type="module"></script>
+</body>
+
+</html>

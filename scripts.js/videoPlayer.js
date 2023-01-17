@@ -59,7 +59,7 @@ informacion.innerHTML = video.info;
 document.addEventListener("click", (event) => {
 
   const { target } = event;
-  if(target.classList.contains("logoImg") || target.classList.contains("logoTitle")){
+  if(target.classList.contains("ogo") || target.classList.contains("h1-text")){
     window.location.href = "../index.html";
   }
 });
